@@ -1,0 +1,33 @@
+{
+    "name": "APR V3 - Codespaces",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspace",
+    "forwardPorts": [8080, 5432],
+    "portsAttributes": {
+        "8080": {
+            "label": "APR V3 App",
+            "onAutoForward": "openPreview"
+        },
+        "5432": {
+            "label": "PostgreSQL"
+        }
+    },
+    "postCreateCommand": "bash .devcontainer/post-create.sh",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "ms-azuretools.vscode-docker",
+                "cweijan.vscode-postgresql-client2"
+            ],
+            "settings": {
+                "files.associations": {
+                    "*.sql": "sql"
+                }
+            }
+        }
+    }
+}
+
