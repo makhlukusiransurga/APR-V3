@@ -33,7 +33,7 @@ Sistem Manajemen Kinerja dan Reward berbasis web dengan REACH Scoring Engine.
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/apr-v3.git
+git clone https://github.com/makhlukusiransurga/APR-V3.git
 cd apr-v3
 ```
 
@@ -138,7 +138,7 @@ docker run -p 8080:8080 \
 ```
 ├── .devcontainer/          # Konfigurasi Codespaces
 │   ├── devcontainer.json
-│   ├── Dockerfile
+│   ├── docker-compose.yml
 │   └── post-create.sh
 ├── public/                 # Frontend static files
 │   ├── index.html
