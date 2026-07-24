@@ -5,15 +5,16 @@
     "workspaceFolder": "/workspace",
     "forwardPorts": [8080, 5432],
     "portsAttributes": {
+        "5432": {
+            "label": "PostgreSQL"
+        },
         "8080": {
             "label": "APR V3 App",
             "onAutoForward": "openPreview"
-        },
-        "5432": {
-            "label": "PostgreSQL"
         }
     },
     "postCreateCommand": "bash .devcontainer/post-create.sh",
+    "postStartCommand": "cd /workspace && npm start",
     "customizations": {
         "vscode": {
             "extensions": [
